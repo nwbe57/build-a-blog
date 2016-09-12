@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br>
+    <form method="post">
+        <br>
+        <br>
+        {% for post in posts%}
+        <div class="post">
+            <pre class="post-created">---------{{post.created}}---------</pre>
+            <div><a href="/blog/{{post.key().id()}}" class="post-title">{{post.title}}</a></div>
+            <pre class="post-body">{{post.post}}</pre>
+        </div>
+        <br>
+        {% endfor %}
+    </form>
+{% endblock %}

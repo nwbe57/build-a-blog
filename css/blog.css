@@ -1,0 +1,51 @@
+body {
+    font-family: sans-serif;
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.error {
+    color: red;
+    font-size: 25px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
+
+input[type=text] {
+    width: 300px;
+    font-size: 20px;
+    padding: 2px;
+}
+
+textarea {
+    width: 600px;
+    height: 200px;
+    font-size: 17px;
+    font-family: monospace;
+}
+
+input[type=submit] {
+    font-size: 24px;
+}
+
+.bloglink {
+    font-weight: bold;
+    font-size: 40px;
+    float: left;
+}
+
+.newlink {
+    font-weight: bold;
+    font-size: 40px;
+    float: right;
+}
+
+.post {
+    font-size: 17px;
+}
