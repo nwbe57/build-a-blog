@@ -33,6 +33,8 @@ class ViewPostHandler(webapp2.RequestHandler):
 
         post = Post.get_by_id(int(ID))
 
+        self.response.write("<a href='/'>blog!</a><br><br>")
+        self.response.write("<a href='/newpost'>enter new post</a>")
         self.response.write("<br><p style='font-size:30px'><strong>" + post.title + "</strong></p><br><br>" + post.post + "<br><br>")
         self.response.write("<br><br>created ")
         self.response.write(post.created)
